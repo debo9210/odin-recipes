@@ -1,9 +1,13 @@
-h1 {
+* {
+  font-style: sans-serif;
+}
+
+.main-title {
   text-align: center;
   font-size: 100px;
 }
 
-ul {
+.recipe-list {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,7 +16,7 @@ ul {
   padding-left: 30px;
 }
 
-li {
+.recipe-list li {
   padding: 20px 0 20px 0;
   margin: 10px;
   font-size: 25px;
@@ -22,11 +26,54 @@ li {
   background: #ccc;
 }
 
-li:hover {
+.recipe-list li:hover {
   background-color: grey;
 }
 
-li a {
+.recipe-list li a {
   text-decoration: none;
   color: rgb(7, 5, 5);
+}
+
+.recipe-title {
+  text-align: center;
+  font-size: 65px;
+  margin: 10px auto;
+}
+
+.recipe-img {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  padding: 0 30px;
+}
+
+.recipe-img img {
+  height: auto;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.recipe-img h3 {
+  font-size: 25px;
+}
+
+.recipe-img h4 {
+  font-size: 20px;
+}
+
+.recipe-img ul {
+  padding: 20px;
+}
+
+.recipe-img ul li,
+.recipe-img ol li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.recipe-img ol li {
+  line-height: 1.2;
 }
